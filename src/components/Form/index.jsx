@@ -4,7 +4,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
-function Formulario(props) {
+import axios from "axios";
+import { useContext } from "react";
+import { DescontosContext } from "../../contexts/DescontosContext";
+
+function Formulario() {
+  const { renderDesc, desconto } = useContext(DescontosContext);
+
   const schema = yup.object().shape({
     amount: yup.string().required("Campo precisa ser preenchido"),
     installments: yup.string().required("Campo precisa ser preenchido"),
@@ -14,7 +20,7 @@ function Formulario(props) {
   const { register, handleSubmit } = useForm({ resolver: yupResolver(schema) });
 
   const requestMDR = (data) => {
-    console.log(data);
+    // console.log(data);
 
     let amountInCents = Number(data.amount) * 100;
 
@@ -24,7 +30,13 @@ function Formulario(props) {
     data.installments = Number(data.installments);
     data.mdr = Number(data.mdr);
 
-    console.log(data);
+    axios
+      .post("https://frontend-challenge-7bu3nxh76a-uc.a.run.app", data)
+      .then((response) => {
+        renderDesc(response.data);
+        console.log(desconto);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

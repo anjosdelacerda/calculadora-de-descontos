@@ -8,7 +8,7 @@ export const Resultados = styled.div`
 
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
   background: #f7f9fa;
 
@@ -21,11 +21,12 @@ export const Resultados = styled.div`
     font-weight: bolder;
     font-style: italic;
 
-    margin-top: 45%;
-    margin-bottom: 18%;
+    margin-top: 28%;
+    margin-bottom: 8%;
   }
 
   li {
     color: #97bef1;
+    margin-bottom: 40px;
   }
 `;
