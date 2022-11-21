@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { AmountProvider } from "./contexts/AmountCountext";
 import { DescontoProvider } from "./contexts/DescontosContext";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
@@ -8,7 +9,9 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <DescontoProvider>
-    <App />
+    <AmountProvider>
+      <App />
+    </AmountProvider>
   </DescontoProvider>
 );
 
