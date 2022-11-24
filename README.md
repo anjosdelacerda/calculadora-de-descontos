@@ -7,7 +7,7 @@ Esta aplicação faz o calculo de descontos por atencipação de pagamentos da p
 Para rodar a aplicação dentro do seu computador você precisará clonar o repositório dentro do terminal 
 
 ````
-git clone https://github.com/anjosdelacerda/calculadora-de-descontos
+git clone git@github.com:anjosdelacerda/calculadora-de-descontos.git
 ````
 
 Para instalar as tecnologias utilizadas na aplicação basta rodar o comando yarn dentro do terminal na pasta clonada.
