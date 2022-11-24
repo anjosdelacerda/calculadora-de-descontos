@@ -18,18 +18,9 @@ yarn
 
 Tencologias utilizadas:
 
-<ol>
 
-React
-JavaScript
-CSS
-Styled-components
-Axios
-React Hook Form
-Yup
-Context-API
+React | JavaScript | CSS | Styled-components |Axios | React Hook Form | Yup | Context-API
 
-</ol>
 
 Api consumida: https://github.com/anjosdelacerda/calculadora-de-descontos 
 
