@@ -15,9 +15,10 @@ Para instalar as tecnologias utilizadas na aplicação basta rodar o comando yar
 ````
 yarn
 ````
-<ul>
 
 Tencologias utilizadas:
+
+<ol>
 
 React
 JavaScript
@@ -28,7 +29,7 @@ React Hook Form
 Yup
 Context-API
 
-</ul>
+</ol>
 
 Api consumida: https://github.com/anjosdelacerda/calculadora-de-descontos 
 
